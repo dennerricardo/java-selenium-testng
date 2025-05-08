@@ -27,7 +27,7 @@ public class MethodsDemo {
 
 	// When you mark you object as static then this method will get belong to class level, not object
 	// and you can directly call getData2() even without object
-	
+
 	public static String getData2() {
 		System.out.println("========= 2");
 		return "ooooooooooi denner";
