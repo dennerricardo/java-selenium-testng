@@ -44,9 +44,9 @@ public class Exercicise2 {
 				
 		System.out.println(driver.findElement(By.cssSelector(".alert-success")).getText());
 		
-//		Assert.assertEquals(driver.findElement(By.tagName("strong")).getText(),"Success!");
+		Assert.assertEquals(driver.findElement(By.tagName("strong")).getText(),"Success!");
 		
-//		System.out.println(driver.findElement(By.tagName("strong")).getText());
+		System.out.println(driver.findElement(By.tagName("strong")).getText());
 		
 		
 			

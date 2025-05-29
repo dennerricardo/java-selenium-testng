@@ -50,7 +50,7 @@ public class Locators2 {
 		return password;
 		
 		//0th index - please use temporary password 
-		//1st index - 'rahulshettyacademy' to Login.
+		//1st index - rahulshettyacademy' to Login.
 		
 		//0th index - rahulshettyacademy
 		//1st index - to Login.

@@ -11,7 +11,7 @@ public class SelIntroduction {
 			//.WebDriver close get
 			
 			// chromedriver.exe-> Chrome Browser 
-			System.setProperty("webdriver.chrome.driver", "/Users/Denner Ricardo/chromedriver.exe");
+			// System.setProperty("webdriver.chrome.driver", "/Users/Denner Ricardo/chromedriver.exe");
 			
 			// webDriver methods + class methods
 			WebDriver driver = new ChromeDriver();

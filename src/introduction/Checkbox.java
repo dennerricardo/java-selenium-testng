@@ -8,24 +8,29 @@ import org.testng.Assert;
 public class Checkbox {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		
+
 		// TestNG is one of the testing framework
 		System.setProperty("webdriver.chrome.driver", "/Users/Denner Ricardo/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 
-		driver.get("https://corporate.spicejet.com/Default.aspx");
-		Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
-		System.out.println(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
-		
-		driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).click();
-		Thread.sleep(2000);
-		
-		Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
-		System.out.println(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
-		
-		// count the number of checkboxes
-		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
+		driver.manage().window().maximize();
+
+		driver.get("https://www.spicejet.com/");
+
+		Assert.assertFalse(driver.findElement(By.xpath("(//div[@class='css-1dbjc4n r-7o8qx1'])[1]")).isSelected());
+		System.out.println(driver.findElement(By.xpath("(//div[@class='css-1dbjc4n r-7o8qx1'])[1]")).isSelected());
+		driver.findElement(By.xpath("(//div[@class='css-1dbjc4n r-7o8qx1'])[1]")).click();
+
+		Thread.sleep(1000);
+		System.out.println(driver.findElement(By.xpath("(//div[@class='css-1dbjc4n r-7o8qx1'])[1]")).isSelected());
+
+//		driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).click();
+//
+//		Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
+//		System.out.println(driver.findElement(By.cssSelector("input[id*='ctl00_mainContent_chk_SeniorCitizenDiscount']")).isSelected());
+//
+//		// count the number of checkboxes
+//		System.out.println(driver.findElements(By.cssSelector("input[type='checkbox']")).size());
 		
 
 

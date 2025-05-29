@@ -11,8 +11,7 @@ import org.testng.Assert;
 public class AutomationPractice {
 
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
-		
+
 		System.setProperty("webdriver.chrome.driver", "/Users/Denner Ricardo/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
     	driver.get("https://rahulshettyacademy.com/AutomationPractice/");
